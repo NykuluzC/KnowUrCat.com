@@ -2,6 +2,7 @@
   import {ref} from "vue"
 
   const count = ref(0);
+  const count2 = ref(1000)
 </script>
 
 <template>
@@ -13,6 +14,7 @@
       <h1>{{ count }}</h1>
       <button @click="count--">-</button>
       <button @click="count++">+</button>
+      <button @click="count+=count2">Power Abuse</button>
     </div>   
   </main>
 </template>
